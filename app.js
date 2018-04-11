@@ -1,4 +1,4 @@
-var app = require('./config/express')();
+var app = require('./jeova-controllers.js')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 

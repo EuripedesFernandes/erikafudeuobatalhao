@@ -38,12 +38,12 @@
           }
             
         }
-        function verdade(resposta)
+        function verdade(resposta){
         resposta = vm.fim
         if(vm.fim = true){
             vm.msgFinal = true;
 
-        }
+        }}
     }
 
 })(angular);

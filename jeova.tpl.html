@@ -1,46 +1,63 @@
+<html ng-app>
+
+    <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
+
 <header class="subhead">
-    <h2>Formulario de Pesquisa do IBGE</h2>
+    <h2>Formulário de Pesquisa do IBGE</h2>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 </header>
-<section id="page page__content" data-ng-controller="jeovaControllersjs as vm">
-    <form id='formListar'>
-        <div class="panel panel--form" ng-if="painel">
-            <div>
-                <span> Ola Camila, Este é um jogo bem simples, só existem três regras : </span>
-                <p> 1- Você pode responder com SIM apenas uma vez! </p>
-                <p> 2- Você pode responder com NAO apenas uma vez! </p>
-                <p> 3- E deve responder as duas perguntas! </p>
-                <p>  <b>O Descumprimento das regras provocara consequencias gravissimas!!!</b></p>
-                <p> Boa Sorte
-                    <i class=" glyphicon glyphicon-heart"></i>
-                </p>
-                <button type="button" class="btn btn-danger">
-                    <i class=" glyphicon glyphicon-heart" data-ng-click="vm.inicio(true)"></i>
-                    <span>Começar</span>
-                </button>
-            </div> <br>
-            <div class="col-xs" ng-if="!vm.show1">
-                <label class="form-field">
-                    <span> Já que acabastes de encotrar sua metade da laranja (EU) gostaria de degustala ?</span>
-                    <br>
-                    <input type="radio" class="form-input" name="love" data-ng-click="vm.viadagem(true)"> Sim
-                    <input type="radio" class="form-input" name="love" data-ng-click="vm.viadagem(false)"> Não
-                </label>
-            </div>
-            <div class="col-xs">
-                <label class="form-field" ng-if="!vm.show1">
-                    <span>faltou com a verdade na pergunta acima ?</span>
-                    <br>
-                    <input type="radio" class="form-input" name="opção" data-ng-click "vm.verdade(true)" ng-disabled="!vm.viadagem"> Sim
-                    <input type="radio" class="form-input" name="opção" data-ng-click "vm.verdade(true)" ng-disabled="vm.viadagem"> Não
-                </label>
-            </div><br>
-            <div class="col-xs" ng-if= "vm.msgFinal">
-                <span><h4><b>Obrigado por participar, aguardando a degustação.</b></h4></span>
 
+<body>
+    <section id="page page__content" data-ng-controller="jeovaControllersjs as vm">
+        <form id='formListar'>
+            <div class="panel panel--form" ng-if="painel">
+                <div>
+                    <span> Olá Camila, Este é um jogo bem simples, só existem três regras : </span>
+                    <p> 1- Você pode responder com SIM apenas uma vez! </p>
+                    <p> 2- Você pode responder com NÃO apenas uma vez! </p>
+                    <p> 3- E deve responder as duas perguntas! </p>
+                    <p>
+                        <b>O Descumprimento das regras provocará consequências gravíssimas!!!</b>
+                    </p>
+                    <p> Boa Sorte
+                        <i class=" glyphicon glyphicon-heart"></i>
+                    </p>
+                    <button type="button" class="btn btn-danger">
+                        <i class=" glyphicon glyphicon-heart" data-ng-click="vm.inicio(true)"></i>
+                        <span>Começar</span>
+                    </button>
+                </div>
+                <br>
+                <div class="col-xs" ng-if="!vm.show1">
+                    <label class="form-field">
+                        <span> Já que acabastes de encontrar sua metade da laranja (EU) gostaria de degustá-la ?</span>
+                        <br>
+                        <input type="radio" class="form-input" name="love" data-ng-click="vm.viadagem(true)"> Sim
+                        <input type="radio" class="form-input" name="love" data-ng-click="vm.viadagem(false)"> Não
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="form-field" ng-if="!vm.show1">
+                        <span>Faltou com a verdade na pergunta acima ?</span>
+                        <br>
+                        <input type="radio" class="form-input" name="opção" data-ng-click "vm.verdade(true)" ng-disabled="!vm.viadagem"> Sim
+                        <input type="radio" class="form-input" name="opção" data-ng-click "vm.verdade(true)" ng-disabled="vm.viadagem"> Não
+                    </label>
+                </div>
+                <br>
+                <div class="col-xs" ng-if="vm.msgFinal">
+                    <span>
+                        <h4>
+                            <b>Obrigado por participar, aguardando a degustação...</b>
+                        </h4>
+                    </span>
+
+                </div>
             </div>
-        </div>        
-    </form>
-</section>
+        </form>
+    </section>
+</body>
+
+</html>
