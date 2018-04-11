@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "projeto amoroso",
   "main": "jeova-controllers.js",
-  "scripts": { 
+  "scripts": {
     "start": "vue init",
     "test": "undefined"
   },
