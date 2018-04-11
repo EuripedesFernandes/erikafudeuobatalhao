@@ -4,9 +4,10 @@
   "description": "projeto amoroso",
   "main": "jeova-controllers.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "undefined"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EuripedesFernandes/erikafudeuobatalhao.git).git"
