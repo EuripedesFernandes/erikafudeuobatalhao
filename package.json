@@ -4,7 +4,7 @@
   "description": "projeto amoroso",
   "main": "jeova-controllers.js",
   "scripts": {
-    "start": "vue init",
+    "start": "node index.js",
     "test": "undefined"
   },
   "repository": {
