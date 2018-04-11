@@ -1,0 +1,22 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "projeto amoroso",
+  "main": "jeova-controllers.js",
+  "scripts": {
+    "test": "undefined"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EuripedesFernandes/erikafudeuobatalhao.git).git"
+  },
+  "keywords": [
+    "amor"
+  ],
+  "author": "Eupiredes and Espindola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EuripedesFernandes/erikafudeuobatalhao.git)/issues"
+  },
+  "homepage": "https://github.com/EuripedesFernandes/erikafudeuobatalhao.git)#readme"
+}
