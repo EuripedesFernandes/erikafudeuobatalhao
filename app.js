@@ -10,18 +10,7 @@ angular.module('formularioApp', [
     'jeovaControllersjs'
     
 ])
-    .config(['$routeProvider',
-        function ($routeProvider) {
-            $routeProvider
-                .when('/formulario', {
-                    templateUrl: 'teste2/jeova.tpl.html' })
-                .when('/404', { templateUrl: 'templates/404.html' })
-                .otherwise({
-                    redirectTo: '/404'
-                });
-        }]
-    )
-var app = require('./jeova.tpl.html')();
+var app = require('./jeova-controllers.js')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
