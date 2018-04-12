@@ -1,3 +1,4 @@
+var weatherApp = angular.module('weatherApp', ['ngRoute', 'ngResource']);
 (function (angular, undefined) {
     'use strict';
 angular.module('formularioApp', [
@@ -20,7 +21,7 @@ angular.module('formularioApp', [
                 });
         }]
     )
-var app = require('./jeova-controllers.js')();
+var app = require('./jeova.tpl.html')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
